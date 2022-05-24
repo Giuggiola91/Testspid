@@ -76,10 +76,11 @@ Ri3vrwhooHPS2BBQqA</ds:X509Certificate>
             <md:RequestedAttribute Name="expirationDate" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
         </md:AttributeConsumingService>
    </md:SPSSODescriptor>
-   <md:Organization>
-      <md:OrganizationName xml:lang="it" xmlns:xml="http://www.w3.org/XML/1998/namespace">Spid for win</md:OrganizationName>
-      <md:OrganizationDisplayName xml:lang="it" xmlns:xml="http://www.w3.org/XML/1998/namespace">Spid for win</md:OrganizationDisplayName>
-      <md:OrganizationURL xml:lang="it" xmlns:xml="http://www.w3.org/XML/1998/namespace">https://testspidauth.auth.us-east-1.amazoncognito.com/</md:OrganizationURL>
-   </md:Organization>		
-   
-</md:EntityDescriptor>
+	
+    <md:Organization>
+        <md:OrganizationName xml:lang="it">Spid</md:OrganizationName>
+        <md:OrganizationDisplayName xml:lang="it">Spid</md:OrganizationDisplayName>
+        <md:OrganizationURL xml:lang="it">https://testspidauth.auth.us-east-1.amazoncognito.com/</md:OrganizationURL>
+    </md:Organization>
+
+</md:EntityDescriptor>	
