@@ -1,65 +1,54 @@
 <?xml version="1.0"?>
-<!-- Esempio di metadata Service Provider
-     Per informazioni sulla compilazione fare riferimento alle Regole Tecniche SPID -->
 
-<!-- entityID è una URI che individua univocamente il Service Provider -->
 <md:EntityDescriptor
     xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
     entityID="https://testspidauth.auth.us-east-1.amazoncognito.com/"
     ID="_681a637-6cd4-434f-92c3-4fed720b2ad8">
 
-    <!-- Il certificato del Service Provider va riportato nei due tag KeyDescriptor
-         qui sotto, senza i delimitatori ‐‐‐ BEGIN CERTIFICATE ‐‐‐ e ‐‐‐ END CERTIFICATE ‐‐‐ -->
     <md:SPSSODescriptor
         protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"
         AuthnRequestsSigned="true"
         WantAssertionsSigned="true">
 
+   <ds:Signature><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+   <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+   <ds:Reference URI="#_dd7b86afb1144a70af5440a764441c491eb7c643">
+   <ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+   <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></ds:Transforms>
+   <ds:SignatureValue>c1Q+uYd+cwu5JL1mW6L1xjhPU3O4JjYVRHAvfCkZs77tKPnX/bAn2FG5fc6je7UfvxKGHvTeK4ZsABnZmPTQIvo3wmqgsqTsJEhSiR2CgEdw9NWzvTT8zJTQkD0zh8yBYTn8y2rVrhRbTax5Soe8hQxIGQRlLae+ANI8vcxQGxuhHK2//a/ZqsUp3zhe8KPFTeL3qnfa/PZs8raKIOJG2uCIAV9J0Pvio+Qc+acrXgYVCuBVcjSLfvMWcID6wWAtmwRzAsUSyb6ahoSu/Q9uYdW50J4/a078gHQPYZcK85+9r6QBCGZYpqOUrym9eT0cxBgaDm/mOaxgADqnnp94sw==</ds:SignatureValue>
+
+<ds:KeyInfo>
+
         <md:KeyDescriptor use="signing">
             <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                 <ds:X509Data>
-<ds:X509Certificate>MIIErDCCA5SgAwIBAgIOAX8hIWCDAAAAAHhthEIwDQYJKoZIhvcNAQELBQAwgZAx
-KDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzEwSmFuMjAyMl8xNTI5MjQxGDAWBgNV
-BAsMDzAwRDNOMDAwMDAwOGxTejEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAU
-BgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0Ew
-HhcNMjIwMjIyMTExMTQ5WhcNMjMwMjIyMDAwMDAwWjCBkDEoMCYGA1UEAwwfU2Vs
-ZlNpZ25lZENlcnRfMTBKYW4yMDIyXzE1MjkyNDEYMBYGA1UECwwPMDBEM04wMDAw
-MDA4bFN6MRcwFQYDVQQKDA5TYWxlc2ZvcmNlLmNvbTEWMBQGA1UEBwwNU2FuIEZy
-YW5jaXNjbzELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQTCCASIwDQYJKoZIhvcN
-AQEBBQADggEPADCCAQoCggEBALecsjw9COVLBO/z4ZGHzAKntaHQSF1H2uTlNO9h
-8a1ugXgHiZYYpH11vJYA37EAsHhUuL5/+FtKhd0ekJiRdUsSSvVMy19vn7dcRhX+
-3GoFMXi9BgU3COcgYY5hT1HnPbq2EUY6vZFgX5yGK53I9kqP/sDa3Zp0IiD6vDPf
-soBWADi9sglUWMGd6WTcJr/S41DMJTMnCscd39uHJ4924jBbyzNkgA7edFaVgyLB
-UDeRcGX4AFsjCVThvo98zXpojWEOpCVZ/3AsflrVUbaJZTb2tiWy5vD6OCqfD2Vt
-//lvnvBY32QssnVLzYnXFNCCgSUJiwezKB+Py8fpPe4/Z0kCAwEAAaOCAQAwgf0w
-HQYDVR0OBBYEFG6HMLaJntU3gV8F3Vw0PIjsEzImMA8GA1UdEwEB/wQFMAMBAf8w
-gcoGA1UdIwSBwjCBv4AUbocwtome1TeBXwXdXDQ8iOwTMiahgZakgZMwgZAxKDAm
-BgNVBAMMH1NlbGZTaWduZWRDZXJ0XzEwSmFuMjAyMl8xNTI5MjQxGDAWBgNVBAsM
-DzAwRDNOMDAwMDAwOGxTejEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNV
-BAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0GCDgF/
-ISFggwAAAAB4bYRCMA0GCSqGSIb3DQEBCwUAA4IBAQBnKcU+NXE/CWkXPE55m9aZ
-cyiyOLbcol3DJM/0KazNxzO/eKNikogHc4l8Stqm5k1seYqmsS7RKxIf+tLhOV+O
-HN7EzGYOD15U1TVdAyssTrX9yIaTyU6+ap49bQD1aztftF0dP2mmW+rJ5VmWNG8s
-JkgRMD1xMChJIbKjcDtAEFAUkQURlYDxJC+JY5d27HvonKVEp7sXjnv20Ft7XpmS
-rMLE/6ZyNfP/apAuOAUIxDReYUjfYR4aBlcc37MFvL57JYzPMLpB0G9eZE6Xhkfe
-nxguHhdS/3W6txEA/23HRAp4XR7pKMAaAiujwd7fDG+62wGORWqxabC24rVrtNhK</ds:X509Certificate>
+<ds:X509Certificate>MIICqTCCAZECAQAwTzELMAkGA1UEBhMCSVQxDjAMBgNVBAgMBUl0YWx5MQ0wCwYD
+VQQHDARSb21lMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQwggEi
+MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDOC68mqw7yE6CWrVlYnWe9YIjD
+p/7Z7ItWgQB4LoVCraxZTTpJ9mvQY0UPJruRPGDugtralt7om4BD9e8rn3ubi0Jb
+fsp5Rz4ifZauzyBCcRhRs5MLjtfgzl9Qrlvq1jPDtZZjWxVTQxWrRmTg5SsfubwS
+SKZhP+QQjafoKcfYQ6lK8LK7jdnpg2WzOLLY2rYQeQZ2ae/iZ9jC5BAVjwUlUeLK
+18F+U8cO8gNAAbkeZsdKnbOH9L5zwxFZFhOT41dn/Qx3y77VC4bUjefZ23PxD9OV
+i94YQlpAiWvOhh10j6GNQdVjS1vH1rg5zaW4VvOvbFs+Yy5aOJzaK57ONnV5AgMB
+AAGgFTATBgkqhkiG9w0BCQcxBgwEYXNkZjANBgkqhkiG9w0BAQsFAAOCAQEAu71O
+ScvHvuISScRyNczRVZq0x5L3ZfuLYYFdYlckZzRLhCh3lYTF20uD54G/aa4EVP68
+u+07Zt8TH4ocbGq56Y93+MuViqjoCS1AWtu15IjExFPNJ27L5wnToxtamjRLTwts
+I4kwdxdRcCLq1F4QO9yn+s+K+Jt5ss1FfF3Nhn0aWsgDDDFmYMhvk3mDjdaijLCv
+dE/g3+aSL9ZmpSjhgPfB807OkEnPs63k2lqzomIhv7ACF5e9f38QK4ubRy/Ez7O6
+YBZzzsjlAbVfI6wCs+dnawxHqh1CXZMyJLUysWFDKzBAKR/oooXSFrHREyAXq4Zq
+Ri3vrwhooHPS2BBQqA</ds:X509Certificate>
                 </ds:X509Data>
             </ds:KeyInfo>
         </md:KeyDescriptor>
         <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
 
-        <!-- Endpoint del Service Provider deputato a ricevere le asserzioni di login.
-             (può essere ripetuto più volte, incrementando l'attributo index) -->
         <md:AssertionConsumerService
             Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
             Location="https://testspidauth.auth.us-east-1.amazoncognito.com/spid/acs"
             index="0"
             isDefault="true" />
 
-        <!-- Gruppo di attributi predefinito, che il Service Provider potrà richiedere
-             durante in login. Si può specificare più volte. Si raccomanda di limitare
-             gli attributi richiesti ai soli necessari per l'erogazione del proprio servizio. -->
         <md:AttributeConsumingService index="1">
             <md:ServiceName xml:lang="it">TestSpid</md:ServiceName>
             <md:ServiceDescription xml:lang="it">TestSpid</md:ServiceDescription>
@@ -84,7 +73,6 @@ nxguHhdS/3W6txEA/23HRAp4XR7pKMAaAiujwd7fDG+62wGORWqxabC24rVrtNhK</ds:X509Certifi
 
     </md:SPSSODescriptor>
 
-    <!-- Informazioni generali sul Service Provider -->
     <md:Organization>
         <md:OrganizationName xml:lang="it">Spid</md:OrganizationName>
         <md:OrganizationDisplayName xml:lang="it">Spid</md:OrganizationDisplayName>
