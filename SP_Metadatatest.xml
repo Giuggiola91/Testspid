@@ -11,8 +11,6 @@
         AuthnRequestsSigned="true"
         WantAssertionsSigned="true">
 
-<ds:KeyInfo>
-
         <md:KeyDescriptor use="signing">
             <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                 <ds:X509Data>
@@ -35,15 +33,6 @@ Ri3vrwhooHPS2BBQqA</ds:X509Certificate>
             </ds:KeyInfo>
         </md:KeyDescriptor>
         <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
-
-    
-<ds:Signature>
-   <ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
-   <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
-   <ds:Reference URI="#_dd7b86afb1144a70af5440a764441c491eb7c643">
-   <ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
-   <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></ds:Transforms>
-   <ds:SignatureValue>c1Q+uYd+cwu5JL1mW6L1xjhPU3O4JjYVRHAvfCkZs77tKPnX/bAn2FG5fc6je7UfvxKGHvTeK4ZsABnZmPTQIvo3wmqgsqTsJEhSiR2CgEdw9NWzvTT8zJTQkD0zh8yBYTn8y2rVrhRbTax5Soe8hQxIGQRlLae+ANI8vcxQGxuhHK2//a/ZqsUp3zhe8KPFTeL3qnfa/PZs8raKIOJG2uCIAV9J0Pvio+Qc+acrXgYVCuBVcjSLfvMWcID6wWAtmwRzAsUSyb6ahoSu/Q9uYdW50J4/a078gHQPYZcK85+9r6QBCGZYpqOUrym9eT0cxBgaDm/mOaxgADqnnp94sw==</ds:SignatureValue>
 
         <md:AssertionConsumerService
             Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
