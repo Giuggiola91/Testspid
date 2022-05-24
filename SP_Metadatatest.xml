@@ -65,8 +65,8 @@ Ri3vrwhooHPS2BBQqA</ds:X509Certificate>
     </md:SPSSODescriptor>
 
     <md:Organization>
-        <md:OrganizationName xml:lang="it">Spid</md:OrganizationName>
-        <md:OrganizationDisplayName xml:lang="it">Spid</md:OrganizationDisplayName>
+        <md:OrganizationName xml:lang="it">Spid for win</md:OrganizationName>
+        <md:OrganizationDisplayName xml:lang="it">Spid for win</md:OrganizationDisplayName>
         <md:OrganizationURL xml:lang="it">https://testspidauth.auth.us-east-1.amazoncognito.com/</md:OrganizationURL>
     </md:Organization>
 
