@@ -77,10 +77,10 @@ Ri3vrwhooHPS2BBQqA</ds:X509Certificate>
         </md:AttributeConsumingService>
    </md:SPSSODescriptor>
 	
-    <md:Organization>
-        <md:OrganizationName xml:lang="it">Spid</md:OrganizationName>
-        <md:OrganizationDisplayName xml:lang="it">Spid</md:OrganizationDisplayName>
-        <md:OrganizationURL xml:lang="it">https://testspidauth.auth.us-east-1.amazoncognito.com/</md:OrganizationURL>
-    </md:Organization>
+   <md:Organization>
+      <md:OrganizationName xml:lang="it" xmlns:xml="http://www.w3.org/XML/1998/namespace">Dipartimento per la trasformazione digitale</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="it" xmlns:xml="http://www.w3.org/XML/1998/namespace">Dipartimento per la trasformazione digitale</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="it" xmlns:xml="http://www.w3.org/XML/1998/namespace">https://innovazione.gov.it/dipartimento/</md:OrganizationURL>
+   </md:Organization>
 
 </md:EntityDescriptor>	
