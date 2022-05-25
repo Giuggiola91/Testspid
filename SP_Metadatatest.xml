@@ -1,26 +1,19 @@
 <?xml version="1.0"?>
 
-<md:EntityDescriptor
-    xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
-    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-    entityID="https://testspidauth.auth.us-east-1.amazoncognito.com/"
-    ID="_681a637-6cd4-434f-92c3-4fed720b2ad8">
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://testspidauth.auth.us-east-1.amazoncognito.com/" ID="_681a637-6cd4-434f-92c3-4fed720b2ad8">
 
-    <md:SPSSODescriptor
-        protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"
-        AuthnRequestsSigned="true"
-        WantAssertionsSigned="true">
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="true" WantAssertionsSigned="true">
 
 <ds:Signature>
   <ds:SignedInfo>
-    <ds:CanonicalizationMethod  Algorithm="http://www.w3.org/2000/09/xmldsig#" /></ds:CanonicalizationMethod>
-    <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /></ds:SignatureMethod>
+    <ds:CanonicalizationMethod  Algorithm="http://www.w3.org/2000/09/xmldsig#" />
+    <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
     <ds:Reference URI="#_dd7b86afb1144a70af5440a764441c491eb7c643">
        <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
-       <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /></ds:DigestMethod>
-       <ds:DigestValue>WnSAhT83ud8vEZNqtwv/08INUNbWIdDQT0HzurLVLr4= /></ds:DigestValue>
+       <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+       <ds:DigestValue>WnSAhT83ud8vEZNqtwv/08INUNbWIdDQT0HzurLVLr4= />
     </ds:Reference>
-    </ds:SignedInfo>
+	</ds:SignedInfo>
   <ds:SignatureValue>c1Q+uYd+cwu5JL1mW6L1xjhPU3O4JjYVRHAvfCkZs77tKPnX/bAn2FG5fc6je7UfvxKGHvTeK4ZsABnZmPTQIvo3wmqgsqTsJEhSiR2CgEdw9NWzvTT8zJTQkD0zh8yBYTn8y2rVrhRbTax5Soe8hQxIGQRlLae+ANI8vcxQGxuhHK2//a/ZqsUp3zhe8KPFTeL3qnfa/PZs8raKIOJG2uCIAV9J0Pvio+Qc+acrXgYVCuBVcjSLfvMWcID6wWAtmwRzAsUSyb6ahoSu/Q9uYdW50J4/a078gHQPYZcK85+9r6QBCGZYpqOUrym9eT0cxBgaDm/mOaxgADqnnp94sw==</ds:SignatureValue>
 </ds:Signature>
 
@@ -76,11 +69,26 @@ Ri3vrwhooHPS2BBQqA</ds:X509Certificate>
             <md:RequestedAttribute Name="expirationDate" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
         </md:AttributeConsumingService>
    </md:SPSSODescriptor>
+   <ns0:Organization>
+        <ns0:OrganizationName xml:lang="en">
+            Spid testen</ns0:OrganizationName>
+        <ns0:OrganizationDisplayName xml:lang="en">
+            Spid testen
+        </ns0:OrganizationDisplayName>
+        <ns0:OrganizationURL xml:lang="en">
+            https://testspidauth.auth.us-east-1.amazoncognito.com/
+        </ns0:OrganizationURL>
+    </ns0:Organization>
+    <ns0:ContactPerson contactType="technical">
+        <ns0:GivenName>
+            Giuggiola
+        </ns0:GivenName>
+        <ns0:SurName>
+            Giuggiola
+        </ns0:SurName>
+        <ns0:EmailAddress>
+            giuggiolabrumrbum@gmail.com
+        </ns0:EmailAddress>
+    </ns0:ContactPerson>
 	
- <md:Organization>
-        <md:OrganizationName xml:lang="it">Spid</md:OrganizationName>
-        <md:OrganizationDisplayName xml:lang="it">Spid</md:OrganizationDisplayName>
-        <md:OrganizationURL xml:lang="it">https://testspidauth.auth.us-east-1.amazoncognito.com/</md:OrganizationURL>
- </md:Organization>
-
-</md:EntityDescriptor>
+</ns0:EntityDescriptor>
