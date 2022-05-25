@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<md:EntityDescriptor entityID="https://testspidauth.auth.us-east-1.amazoncognito.com/" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:spid="https://spid.gov.it/saml-extensions">
+
+<ds:Signature>
+  <ds:SignedInfo>
+    <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+    <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+    <ds:Reference URI="#_dd7b86afb1144a70af5440a764441c491eb7c643">
+	<ds:Transforms>
+       <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+       <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+	</ds:Transforms>
+    <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+	<ds:DigestValue>WnSAhT83ud8vEZNqtwv/08INUNbWIdDQT0HzurLVLr4=</ds:DigestValue>
+    </ds:Reference>
+	</ds:SignedInfo>
+  <ds:SignatureValue>c1Q+uYd+cwu5JL1mW6L1xjhPU3O4JjYVRHAvfCkZs77tKPnX/bAn2FG5fc6je7UfvxKGHvTeK4ZsABnZmPTQIvo3wmqgsqTsJEhSiR2CgEdw9NWzvTT8zJTQkD0zh8yBYTn8y2rVrhRbTax5Soe8hQxIGQRlLae+ANI8vcxQGxuhHK2//a/ZqsUp3zhe8KPFTeL3qnfa/PZs8raKIOJG2uCIAV9J0Pvio+Qc+acrXgYVCuBVcjSLfvMWcID6wWAtmwRzAsUSyb6ahoSu/Q9uYdW50J4/a078gHQPYZcK85+9r6QBCGZYpqOUrym9eT0cxBgaDm/mOaxgADqnnp94sw==</ds:SignatureValue>
+</ds:Signature>
+<ds:KeyInfo>
+ <ds:KeyValue>
+ <ds:RSAKeyValue>
+ <ds:Modulus>MIIEpAIBAAKCAQEAzguvJqsO8hOglq1ZWJ1nvWCIw6f+2eyLVoEAeC6FQq2sWU06
+SfZr0GNFDya7kTxg7oLa2pbe6JuAQ/XvK597m4tCW37KeUc+In2Wrs8gQnEYUbOT
+C47X4M5fUK5b6tYzw7WWY1sVU0MVq0Zk4OUrH7m8EkimYT/kEI2n6CnH2EOpSvCy
+u43Z6YNlsziy2Nq2EHkGdmnv4mfYwuQQFY8FJVHiytfBflPHDvIDQAG5HmbHSp2z
+h/S+c8MRWRYTk+NXZ/0Md8u+1QuG1I3n2dtz8Q/TlYveGEJaQIlrzoYddI+hjUHV
+Y0tbx9a4Oc2luFbzr2xbPmMuWjic2iuezjZ1eQIDAQABAoIBAQCKFFxxTms6oRqa
+P1tDvmB6Eco1TEzGn/WUp+i3oX1efOKmCdIJJOGFijEKgUtrfgn7bKfbmwWQ3jyr
+zpFUK5F7YGy8whBQDAVAuecUCOw2enHwtqXRNg3HsqU/fUlN6/ROsE8zECQPY0KP
+QCJ0cD9hCGhX3GXbgCSHT1b5h55Md3+VtQwMWgLqwtqfq2eMI4O6+RYi9Ewuon1J
+gyeNMpK+4fV7dWO9FS8vtrtulRFewij+NVBebaNAUPB6QsZ70gbW7fGTwfyXdP+c
+Dy88M6Vsx9r3LR1CDTFQSqnHOVo65C8/OvWeWWsFXPpJq3qAU6W05F+90KZtOuOK
+TDEg5C1NAoGBAOYh2EJp23/RXsx7hVnxiS+rJUZcH2MRpTAF0NnCMfh3cKbBQsKR
+MSuhqnAMsk1yL3vWVt+RohAoZ4kyuALV6e33PTsAM3BHWLCkZ8PpMpt5rRtEr4ZF
+6TRaJmgpaec5/NvjBseYWgzcUuG3E4Mp9OkCiGXxso/eYfE4DlEAkMqnAoGBAOU0
+vOoinz5Buk5ZFSS8y9J40HQZahJwFvyI9kVzGeaaI5a3I3z9w/kiEFPliDq9cXOF
+HtUbLdyJD7FsWQ9SevYgl2LNGg/uULBmHr3lmlD3CAYJ1EF9egVfLfELqc+agkx/
+N8piqcST7gT5l3UxnW6qzaE45ISviIkDprZTrmLfAoGAelf52WzfhXcwV7M/NI7k
+6NOqsFofUZK65+nfmzTTTg1pdS1/KWL46gI7UvBdBjEzLznG23pX1xEz4ct16gQB
+JkJvaeN0dTdo3he5FnzuK5unPLzqN48JKIzYqD2EEKpSVC/AlfHXxciHw3mJxQxU
+KF/xVYkF7dhC53NuoP+U+jcCgYEA2x+GE9ixoNU5hbmIiyyrNzYlIzlAvQvIDfnq
+Zw7ZDisCJw5CsTXx6vVz4qEnkfCWy7fSeC2ZtKKcDCTnJ8zUnQUfdWdbqStOnLWk
+YitlUk44r30qHMoWo5gQ1ccuurieJP/imGumnbZG8R6ke3fJaImGOMGpRmiCAWsq
+MFjj+MUCgYBDFuN7c0qQh3Iphd9mVrTAUlo03B/qknpgyfqIZABHvsHRPJ9V9fiV
+frjBsa4dfDK9TIYcADJA377njO8QDrjG/aFT9pH3804LP3u4I67ZBranDxYTMMQ0
+JRg+3JL94uOGHhVnjz41gU8UUkD0zXoo9c9SEnK/oQGvurfVAVPmEA==
+ </ds:Modulus>
+ </ds:RSAKeyValue>
+ </ds:KeyValue>
+</ds:KeyInfo>
+<md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+
+<md:KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>
+                        MIICqTCCAZECAQAwTzELMAkGA1UEBhMCSVQxDjAMBgNVBAgMBUl0YWx5MQ0wCwYD
+VQQHDARSb21lMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQwggEi
+MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDOC68mqw7yE6CWrVlYnWe9YIjD
+p/7Z7ItWgQB4LoVCraxZTTpJ9mvQY0UPJruRPGDugtralt7om4BD9e8rn3ubi0Jb
+fsp5Rz4ifZauzyBCcRhRs5MLjtfgzl9Qrlvq1jPDtZZjWxVTQxWrRmTg5SsfubwS
+SKZhP+QQjafoKcfYQ6lK8LK7jdnpg2WzOLLY2rYQeQZ2ae/iZ9jC5BAVjwUlUeLK
+18F+U8cO8gNAAbkeZsdKnbOH9L5zwxFZFhOT41dn/Qx3y77VC4bUjefZ23PxD9OV
+i94YQlpAiWvOhh10j6GNQdVjS1vH1rg5zaW4VvOvbFs+Yy5aOJzaK57ONnV5AgMB
+AAGgFTATBgkqhkiG9w0BCQcxBgwEYXNkZjANBgkqhkiG9w0BAQsFAAOCAQEAu71O
+ScvHvuISScRyNczRVZq0x5L3ZfuLYYFdYlckZzRLhCh3lYTF20uD54G/aa4EVP68
+u+07Zt8TH4ocbGq56Y93+MuViqjoCS1AWtu15IjExFPNJ27L5wnToxtamjRLTwts
+I4kwdxdRcCLq1F4QO9yn+s+K+Jt5ss1FfF3Nhn0aWsgDDDFmYMhvk3mDjdaijLCv
+dE/g3+aSL9ZmpSjhgPfB807OkEnPs63k2lqzomIhv7ACF5e9f38QK4ubRy/Ez7O6
+YBZzzsjlAbVfI6wCs+dnawxHqh1CXZMyJLUysWFDKzBAKR/oooXSFrHREyAXq4Zq
+Ri3vrwhooHPS2BBQqA
+                </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+	  <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://testspidauth.auth.us-east-1.amazoncognito.com/services/auth/sp/saml2/logout" />
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://testspidauth.auth.us-east-1.amazoncognito.com/services/auth/sp/saml2/logout" />
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://testspidauth.auth.us-east-1.amazoncognito.com/services/auth/sp/saml2/logout" />
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://testspidauth.auth.us-east-1.amazoncognito.com/services/auth/sp/saml2/logout" />
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://testspidauth.auth.us-east-1.amazoncognito.com/padigitale2026/services/auth/sp/saml2/logout" />
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://testspidauth.auth.us-east-1.amazoncognito.com/padigitale2026/services/auth/sp/saml2/logout" />
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://testspidauth.auth.us-east-1.amazoncognito.com" index="0" isDefault="true" />
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://testspidauth.auth.us-east-1.amazoncognito.com/login" index="1" />
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://testspidauth.auth.us-east-1.amazoncognito.com/padigitale2026/login" index="2" />
+	  <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://testspidauth.auth.us-east-1.amazoncognito.com/padigitale2026/sis_SpidPage" index="3" />
+      <md:AttributeConsumingService index="0" isDefault="true">
+            <md:ServiceName xml:lang="it">TestSpid</md:ServiceName>
+            <md:ServiceDescription xml:lang="it">TestSpid</md:ServiceDescription>
+            <md:RequestedAttribute Name="name" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="fiscalNumber" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="familyName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="spidCode" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="gender" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="dateOfBirth" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="countyOfBirth" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="idCard" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="registeredOffice" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="email" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="digitalAddress" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="ivaCode" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="placeOfBirth" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="companyName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="mobilePhone" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="address" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="expirationDate" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+        </md:AttributeConsumingService>
+   </md:SPSSODescriptor>
+   <md:Organization>
+        <md:OrganizationName xml:lang="it">
+            Spid test
+		</md:OrganizationName>
+        <md:OrganizationDisplayName xml:lang="it">
+            Spid test
+        </md:OrganizationDisplayName>
+        <md:OrganizationURL xml:lang="it">
+            https://testspidauth.auth.us-east-1.amazoncognito.com/
+        </md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="other">
+        <md:Extensions>
+         <spid:Public/>
+		 <spid:IPACode>PA:IT-PCM_AA1D3A2</spid:IPACode>
+        </md:Extensions>
+        <md:EmailAddress>giuggiolabrumbrum@gmail.com</md:EmailAddress>
+   </md:ContactPerson>
+</md:EntityDescriptor>
+   
